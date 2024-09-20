@@ -1,0 +1,92 @@
+ body{
+    font-family: "Comic Neue", cursive;
+    font-weight: 800;
+    color:#001F3F;
+    
+    
+}
+
+
+.jokes-container{
+    position:relative;
+    
+    
+}
+.backgound-container{
+    display:flex;
+    justify-content: center;
+}
+
+.setup-container {
+    background-image: url(../images/setup.png);
+    background-size: 400px;
+    height: 400px;
+    width: 400px;
+    background-position: -3%;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 18%;
+    left: 2%;
+}
+
+.setup-joke {
+    inline-size: 350px;
+    overflow-wrap: break-word;
+    position: absolute;
+    top: 38%;
+    left: 10%;
+    font-size: larger;
+}
+
+
+
+
+
+.punchline-container{
+    background-image: url(../images/punchline.png);
+    background-size: 250px;
+    height: 300px;
+    width: 328px;
+    background-position: 0%;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 35%;
+    left: 65%;
+
+}
+
+.punchline-joke {
+    inline-size: 200px;
+    overflow-wrap: break-word;
+    position: relative;
+    top: 30%;
+    left: 10%;
+    font-size: larger;
+}
+
+
+@media (max-width:950px){
+    .backgound-container{
+        display: flex;
+        justify-content: left;
+        align-items: center;
+        /* width:50%; */
+    }
+
+    
+    .jokes-container{
+        width: 1em;
+        margin-right: 10%;
+        
+    }
+
+    .punchline-container{
+        
+        top: 16em;
+        left: 36em;
+    
+    }
+
+
+
+}
